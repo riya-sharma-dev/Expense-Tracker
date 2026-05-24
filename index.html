@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <div class="balance">
+
+        <div class="counter">
+            <p>Income</p> <span class="incomeCounter">0.00</span>
+        </div>
+
+
+         <div class="counter">
+           <p>Expenses</p> <span class="expenseCounter"></span>
+         </div>
+
+       <div class="counter">
+         <p>Total</p> <span class="totalCounter"></span> </div> 
+
+        </div>
+
+    </header>
+
+    <main>
+
+        
+        <div class="filter">
+             <select  id="filterBtn">
+                <option   class="optfilter"   value="">Category</option>
+                <option   class="optfilter"  class="all" value="All">All</option>
+                <option   class="optfilter"  class="travel" value="Travel">Travel</option>
+                <option   class="optfilter"  class="food" value="Food">Food</option>
+                <option   class="optfilter"  class="shopping" value="Shopping">Shopping</option>
+                <option   class="optfilter"  class="other" value="Other">Other</option>
+                <option   class="optfilter"  class="salary" value="Salary">Salary</option>
+            </select> 
+</div>
+
+
+
+<div class="search-bar">
+    <div class="search-input"> <i class="fa-solid fa-magnifying-glass"></i> <input  id ="searchTran" type="text" placeholder="search transactions..."> </div>
+</div>
+
+    </main>
+
+<div class="con">
+
+    <div id="dateGrp"></div>
+    <ul class="list-container"></ul>
+         <!-- list -->
+    </div>
+
+
+    <button class="add"><i class="fa-solid fa-plus"></i></button>
+
+
+
+<div class="form-con">
+    <form>
+
+        <span class="closeView"><i class="fa-notdog fa-solid fa-xmark"></i></span>
+        
+  <div class="type">
+    <button  id="incomeBtn"    type="button"  >Income</button>
+    <button  id="expenseBtn"   type="button"  >Expense</button>
+            </div>
+
+
+     <div class="amt">
+          <label>Amount:</label>
+        <input  class="amtInput"   type="text" >
+
+        </div> 
+
+
+  
+      <div class="noteCon">
+        <label>Note:</label>
+        <input type="text"  id="Note"></input>
+    </div>
+
+
+
+<div class="accountBox">
+
+   <div class="accountInput">
+    <label> Account:</label>  
+    <input id="trantype" type="text">
+   </div>
+
+   <div class="accountOptions">
+
+      <button type="button">Cash</button>
+      <button type="button">Account</button>
+      <button type="button">Card</button>
+
+   </div>
+
+</div>
+
+      <div class="category">
+            <select  id="opt">
+                <option value="">Category</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+                <option value="Salary">Salary</option>
+            </select>
+        </div>
+
+
+
+
+
+        <div class="saveCon">
+      <button id="saveBtn" type="submit">Save</button>
+</div>
+
+    </form>
+
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
