@@ -1,4 +1,5 @@
-// Updating data means changing the values inside the object or array. Re-rendering means showing the updated data on the screen again.
+// Updating data means changing the values inside the object or array. 
+// Re-rendering means showing the updated data on the screen again.
 
 // Update = existing data ko new state mein save/change karna.
 // item.amount = value
@@ -89,6 +90,7 @@ function showTransactions(arr = data){
 let lastDate =""
 
  arr.forEach(function(i,index){
+    
     let newLi = document.createElement('li')
     newLi.classList.add("transLi")
 
@@ -154,6 +156,7 @@ list.appendChild(dateHeading)
     }
 
   lastDate = currentDate
+  
 let tranNote = document.createElement('p')
 tranNote.textContent = i.Note
 
@@ -222,7 +225,7 @@ closeBtn.addEventListener('click', function(){
 
 let filterBtn = document.querySelector('#filterBtn')
 
-currentFilter = "All"
+let currentFilter = "All"
 
 function checkFilter(){
     if(currentFilter === "Travel"){
